@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Los mejores sitios para visitar en Australia durante las vacaciones"
+    />
+    <meta name="keywords" content="outback, vacaciones, playa" />
+    <meta name="author" content="Habib Julio" />
+    <title>Around Australia</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="header">
+        <p class="header__text">Around the World</p>
+        <p class="header__text-country">The Australian Territory SA</p>
+      </header>
+      <main class="content">
+        <div class="author">
+          <img
+            src="./images/FOTO_ID.jpg"
+            alt="AuthorPicture"
+            class="author__picture"
+          />
+          <div class="author__info">
+            <div class="author__info-title">
+              <p class="author__info-name">Habib Julio</p>
+              <div class="author__editbutton"></div>
+            </div>
+            <p class="author__info-job">Explorador</p>
+            <div
+              class="author__add-button author__add-button_resolution_725"
+              onclick="clearFields()"
+            ></div>
+          </div>
+          <div
+            class="author__add-button author__add-button_resolution_1180"
+            onclick="clearFields()"
+          ></div>
+        </div>
+        <div class="venues">
+          <template class="venues__template">
+            <div class="venue">
+              <div class="venue__del-button"></div>
+              <img
+                class="venue__picture"
+              />
+              <div class="venue__info">
+                <p class="venue__info-name"></p>
+                <div class="venue__info-likebutton"></div>
+              </div>
+          </template>
+          <!-- <div class="venue">
+            <div class="venue__del-button"></div>
+            <img
+              src="./images/hahndorf_place.jpg"
+              alt="Town of Hahndorf"
+              class="venue__picture"
+            />
+            <div class="venue__info">
+              <p class="venue__info-name">Hahndorf Town</p>
+              <div class="venue__info-likebutton"></div>
+            </div>
+          </div>
+          <div class="venue">
+            <div class="venue__del-button"></div>
+            <img
+              src="./images/Maclaren_Vale.webp"
+              alt="Maclaren Vale"
+              class="venue__picture"
+            />
+            <div class="venue__info">
+              <p class="venue__info-name">Maclaren Vale</p>
+              <div class="venue__info-likebutton"></div>
+            </div>
+          </div>
+          <div class="venue">
+            <div class="venue__del-button"></div>
+
+            <img
+              src="./images/Victor_Harbour.jpg"
+              alt="Victor Harbour"
+              class="venue__picture"
+            />
+            <div class="venue__info">
+              <p class="venue__info-name">Victor Harbour</p>
+              <div class="venue__info-likebutton"></div>
+            </div>
+          </div>
+          <div class="venue">
+            <div class="venue__del-button"></div>
+            <img
+              src="./images/Glenelg_Beach.jpg"
+              alt="Glenelg Beach"
+              class="venue__picture"
+            />
+            <div class="venue__info">
+              <p class="venue__info-name">Glenelg Beach</p>
+              <div class="venue__info-likebutton"></div>
+            </div>
+          </div>
+          <div class="venue">
+            <div class="venue__del-button"></div>
+            <img
+              src="./images/York_Peninsula.jpg"
+              alt="York Peninsula Town"
+              class="venue__picture"
+            />
+            <div class="venue__info">
+              <p class="venue__info-name">York Peninsula Town</p>
+              <div class="venue__info-likebutton"></div>
+            </div>
+          </div>
+          <div class="venue">
+            <div class="venue__del-button"></div>
+            <img
+              src="./images/Bumbunga_lake.webp"
+              alt="Bumbunga Lake"
+              class="venue__picture"
+            />
+            <div class="venue__info">
+              <p class="venue__info-name">Bumbunga Lake</p>
+              <div class="venue__info-likebutton"></div>
+            </div>
+          </div> -->
+        </div>
+        <div class="edit-info edit-info_opened">
+          <form class="edit-info__container">
+            <label class="edit-info__title">Edit Profile</label>
+            <input
+              type="text"
+              class="edit-info__container-name"
+              placeholder="Name"
+            />
+            <input
+              type="text"
+              class="edit-info__container-job"
+              placeholder="About me"
+            />
+            <button class="edit-info__container-button">Save</button>
+            <div class="edit-info__container-closebuttton"></div>
+          </form>
+        </div>
+        <div class="new-image new-image_opened">
+          <form class="new-image__container">
+            <label class="new-image__title">New Place</label>
+            <input
+              type="text"
+              class="new-image__container-town-name"
+              placeholder="Title"
+            />
+            <input
+              type="text"
+              class="new-image__container-img-URL"
+              placeholder="Image URL"
+            />
+            <button class="new-image__container-button">Save</button>
+            <div
+              class="new-image__container-closebuttton"
+              onclick="clearFields()"
+            ></div>
+          </form>
+        </div>
+        <div class="prompted-image prompted-image_opened">
+          <div class="prompted-image__container">
+            <img
+              class="prompted-image__container-picture"
+              alt="Prompted Image"
+              src="//:0"
+            />
+            <p class="prompted-image__container-label"></p>
+            <div class="prompted-image__container-closebuttton"></div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="footer__icons">
+          <a class="footer__icon" href="http://linkedin.com/" target="_blank"
+            ><img src="./images/linkedin.png" alt="linkedin"
+          /></a>
+          <a class="footer__icon" href="http://instagram.com/" target="_blank"
+            ><img src="./images/instagram.png" alt="instagram"
+          /></a>
+          <a
+            class="footer__icon"
+            href="https://web.whatsapp.com/"
+            target="_blank"
+            ><img src="./images/whatsapp.png" alt="whatsapp"
+          /></a>
+          <a class="footer__icon" href="https://twitter.com/" target="_blank"
+            ><img src="./images/x-twitter.png" alt="twitter"
+          /></a>
+          <a class="footer__icon" href="https://facebook.com/" target="_blank"
+            ><img src="./images/facebook.png" alt="facebook"
+          /></a>
+        </div>
+        <p class="footer__links">
+          <a href="#" class="footer__link">Info</a><span>·</span
+          ><a href="#" class="footer__link">Support</a><span>·</span
+          ><a href="#" class="footer__link">Marketing</a>
+        </p>
+        <p class="footer__links">
+          <a href="#" class="footer__link">Terms of use</a><span>·</span
+          ><a href="#" class="footer__link">Privacy Policy</a>
+        </p>
+        <p class="footer__copyright">&#169; 2024 Habib Julio</p>
+      </footer>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
